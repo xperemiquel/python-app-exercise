@@ -11,7 +11,7 @@ def save_todo_into_csv(todo, path):
     try:
         with open(filename, 'w') as csvfile:
             writer = csv.DictWriter(csvfile, fieldnames=list(todo))
-            writer.writeheader() # We could just remove this line ifwe don-t want to write the field headers
+            writer.writeheader() # We could just remove this line if we don't want to write the headers
             writer.writerow(todo)
     except IOError:
         print("I/O error")
