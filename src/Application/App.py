@@ -1,9 +1,9 @@
-from src.Services.ApiService import ApiService
+from src.Services.TodoService import TodoService
 
 
 class App:
     def __init__(self):
-        self._api_service = ApiService()
+        self._todo_service = TodoService()
 
-    def api_service(self) -> ApiService:
-        return self._api_service
+    def todo_service(self) -> TodoService:
+        return self._todo_service
